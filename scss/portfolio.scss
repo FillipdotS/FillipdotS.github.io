@@ -1,0 +1,91 @@
+// Global options
+$enable-gradients: false;
+$enable-shadows: true;
+
+// Customize defaults
+
+$theme-colors: (
+	primary: #686868,
+	secondary: #808080,
+);
+
+@import "bootstrap/scss/bootstrap";
+
+//
+// Custom styles
+//
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #ebebeb;
+}
+
+.jumbotron {
+	border-radius: 0px;
+	text-shadow: 2px 2px map-get($theme-colors, secondary);
+}
+
+#main-jumbotron {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.5)), url("/assets/img/background_ocean.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 400px;
+}
+
+.card {
+	border: none;
+}
+
+.my-pic {
+	width: 95px;
+}
+
+.skill-list li {
+	font-size: 1.2rem;
+}
+
+.project-highlights {
+	list-style: none;
+	padding-left: 15px;
+}
+
+.project-highlights li:before {
+	content: "- ";
+}
+
+.tech-stack img {
+	margin-right: 5px;
+	height: 27px;
+}
+
+hr.project-divider {
+	border-top: 2px dotted rgba(0, 0, 0, 0.30);
+	width: 50%;
+	text-align: center;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.shadow {
+	box-shadow: 0.3rem 0.3rem 0.45rem rgba(0, 0, 0, 0.3) !important;
+}
+
+.shadow-sm {
+	box-shadow: 0.3rem 0.3rem 0.45rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+	box-shadow: 0.3rem 0.3rem 0.45rem rgba(0, 0, 0, 0.5) !important;
+}

@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "build": "npm run css",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
+    "css-prefix": "postcss --replace assets/css/portfolio.css --use autoprefixer --map",
+    "css": "npm run css-compile && npm run css-prefix",
+    "server": "serve --listen 3000",
+    "watch": "nodemon -e html,scss -x \"npm run css\"",
+    "test": "npm run css"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "popper.js": "1.16.1-lts"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.3",
+    "postcss-cli": "^7.1.1",
+    "serve": "^11.3.0"
+  }
+}
