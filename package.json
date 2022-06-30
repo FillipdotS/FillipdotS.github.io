@@ -1,0 +1,33 @@
+{
+  "name": "fillip-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "fillip-portfolio",
+  "author": "FillipdotS",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.11",
+    "classnames": "^2.3.1",
+    "gatsby": "^4.15.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "eslint": "^7.32.0",
+    "eslint-plugin-classnames": "^0.2.1",
+    "eslint-plugin-react": "^7.30.0",
+    "gatsby-plugin-postcss": "^5.15.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  }
+}
