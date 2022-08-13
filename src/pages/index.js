@@ -2,19 +2,21 @@ import * as React from "react";
 import Divider from "../components/Divider";
 import myPhoto from "../images/me.png";
 import projectsIcon from "../images/3d/projects.png";
-import experienceIcon from "../images/3d/experience.png";
-import miscIcon from "../images/3d/misc.png";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
+import classNames from "classnames";
 
 const IndexPage = () => {
+    const footerLinkStyle = classNames("underline", "hover:decoration-dashed", "decoration-solid");
+
     return (
         <main>
             <div className="absolute z-1 top-0 left-0 w-48 h-48 rounded-full blur-3xl bg-gradient-to-bl from-blue-500 to-green-500" />
 
             <div className="container p-3 z-2">
-                <div className="flex flex-row items-center place-content-center mt-16">
-                    <img alt="Fillip Serov" className="rounded-full p-1.5 w-40 h-40 ring-2 ring-gray-500 mr-3" src={myPhoto} />
-                    <div>
+                <div className="flex flex-row flex-wrap items-center place-content-center gap-3">
+                    <img alt="Picture of me" className="rounded-full p-1.5 w-40 h-40 ring-2 ring-gray-500" src={myPhoto} />
+                    <div className="text-center sm:text-left">
                         <h1 className="text-6xl font-extrabold">
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
                                 Fillip<br />Serov
@@ -24,20 +26,24 @@ const IndexPage = () => {
                             Software Engineer
                         </h3>
                     </div>
-                </div>
-                <div className="text-gray-200 mt-6 indent-8">
-                    Hi, I&apos;m a second year student studying Software Engineering in Swansea, Wales.
+                    <div className="text-gray-200 indent-8 max-w-2xl p-4">
+                        Hi, I&apos;m a second year student studying Software Engineering in Swansea, Wales.
 
-                    I taught myself programming a few years ago and loved it, and it is now a huge passion of mine. University has complemented my practical skills with good theoretical knowledge, as well as giving me many opportunities to work together with people.
+                        I taught myself programming a few years ago and loved it, and it is now a huge passion of mine. University has complemented my practical skills with good theoretical knowledge, as well as giving me many opportunities to work together with people.
+                    </div>
                 </div>
 
                 <Divider title={"Projects"} icon={projectsIcon} textColorVariant="blue" />
 
                 <Projects />
 
-                <Divider title={"Experience"} icon={experienceIcon} textColorVariant="purple" />
-
-                <Divider title={"Contact"} icon={miscIcon} textColorVariant="red" />
+                <Footer
+                    elements={[
+                        "Fillip Serov © 2022",
+                        <a className={footerLinkStyle} href={"https://github.com/FillipdotS"}>Github</a>,
+                        <a className={footerLinkStyle} href={"https://uk.linkedin.com/in/fillip-serov-066b101a2"}>LinkedIn</a>
+                    ]}
+                />
             </div>
         </main>
     );
