@@ -69,7 +69,7 @@ const Projects = () => {
             >
                 A simple text cipher app, allowing users to input text to shift up or down arbitrarily.
                 <ul className={listStyle}>
-                    <li>Unit tests</li>
+                    <li>Unit tests with React Testing Library</li>
                 </ul>
             </Project>
         </div>

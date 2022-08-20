@@ -7,14 +7,14 @@ const Footer = ({ elements }) => {
             <h3 className="text-2xl font-extrabold text-gray-200">
                 {elements.map((element, index) => {
                     return (
-                        <>
+                        <React.Fragment key={index}>
                             {element}
                             {index + 1 !== elements.length &&
                                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500 mx-2">
                                     ⬤
                                 </span>
                             }
-                        </>
+                        </React.Fragment>
                     );
                 })}
             </h3>
@@ -22,7 +22,7 @@ const Footer = ({ elements }) => {
     );
 };
 
-Footer.PropTypes = {
+Footer.propTypes = {
     elements: PropTypes.array.isRequired,
 };
 

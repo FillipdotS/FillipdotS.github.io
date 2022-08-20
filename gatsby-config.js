@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `fillip-portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Fillip Serov | Portfolio`,
+    siteUrl: `https://FillipdotS.github.io`
   },
   plugins: ["gatsby-plugin-postcss"]
 };
