@@ -35,7 +35,7 @@ const IndexPage = () => {
                         </p>
 
                         <p className="text-xs">
-                            In case you're interested, this website is hosted on <a className={footerLinkStyle} href="FillipdotS.github.io">Github</a> and custom-made with tailwindcss
+                            In case you're interested, this website is hosted on <a className={footerLinkStyle} href="https://github.com/FillipdotS/FillipdotS.github.io">Github</a> and custom-made with tailwindcss
                         </p>
                     </div>
                 </div>
