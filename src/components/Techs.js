@@ -6,6 +6,8 @@ import unityIcon from "../images/tech/unity.png";
 import csharpIcon from "../images/tech/csharp.png";
 import javaIcon from "../images/tech/java.png";
 import pythonIcon from "../images/tech/python.png";
+import awsIcon from "../images/tech/aws.png";
+import postgresIcon from "../images/tech/postgres.png";
 
 export const Javascript = {
     name: "Javascript",
@@ -45,4 +47,14 @@ export const Unity = {
 export const PythonTech = {
     name: "Python",
     icon: pythonIcon,
+};
+
+export const AWSTech = {
+    name: "AWS",
+    icon: awsIcon,
+};
+
+export const PostgresTech = {
+    name: "Postgres",
+    icon: postgresIcon,
 };

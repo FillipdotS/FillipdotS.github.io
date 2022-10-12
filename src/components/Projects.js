@@ -5,7 +5,19 @@ import xmrBotImage from "../images/projects/xmr-bot.png";
 import ctscanImage from "../images/projects/ctscan.gif";
 import goldbergsImage from "../images/projects/goldbergshouse.png";
 import cipherImage from "../images/projects/cipher.png";
-import { CSharp, Django, Java, Javascript, Monero, NodeJs, PythonTech, ReactTech, Unity } from "../components/Techs";
+import shambotImage from "../images/projects/shambot_graph.png";
+import {
+    AWSTech,
+    CSharp,
+    Django,
+    Java,
+    Javascript,
+    NodeJs,
+    PostgresTech,
+    PythonTech,
+    ReactTech,
+    Unity
+} from "../components/Techs";
 import classNames from "classnames";
 
 const Projects = () => {
@@ -14,14 +26,16 @@ const Projects = () => {
     return (
         <div className="flex flex-wrap justify-center gap-4">
             <Project
-                title="Corona Traveler"
-                image={coronaTravelerImage}
-                techs={[Javascript, ReactTech, PythonTech, Django]}
-                githubLink="https://github.com/FillipdotS/corona-traveler"
+                title="ShamBot"
+                image={shambotImage}
+                techs={[Javascript, NodeJs, AWSTech, PostgresTech]}
+                githubLink="https://github.com/FillipdotS/shambot"
             >
-                An interactive map for coronavirus travel restrictions. Users choose their country and the map will show what other countries are open to them.
+                An exercise in setting up a nodejs application the 'proper' way with AWS, Docker, and more. The actual application is a simple discord bot.
                 <ul className={listStyle}>
-                    <li>Was live for ~1 year</li>
+                    <li>Hosted on AWS</li>
+                    <li>Uses Github Actions to redeploy</li>
+                    <li>Local development with Docker</li>
                 </ul>
             </Project>
             <Project
@@ -35,6 +49,17 @@ const Projects = () => {
                 <ul className={listStyle}>
                     <li>Ran on a VPS</li>
                     <li>Gave support to customers who had issues</li>
+                </ul>
+            </Project>
+            <Project
+                title="Corona Traveler"
+                image={coronaTravelerImage}
+                techs={[Javascript, ReactTech, PythonTech, Django]}
+                githubLink="https://github.com/FillipdotS/corona-traveler"
+            >
+                An interactive map for coronavirus travel restrictions. Users choose their country and the map will show what other countries are open to them.
+                <ul className={listStyle}>
+                    <li>Was live for ~1 year</li>
                 </ul>
             </Project>
             <Project
