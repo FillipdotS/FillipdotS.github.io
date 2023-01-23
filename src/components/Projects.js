@@ -4,20 +4,23 @@ import coronaTravelerImage from "../images/projects/corona-traveler.png";
 import xmrBotImage from "../images/projects/xmr-bot.png";
 import ctscanImage from "../images/projects/ctscan.gif";
 import goldbergsImage from "../images/projects/goldbergshouse.png";
-import cipherImage from "../images/projects/cipher.png";
 import shambotImage from "../images/projects/shambot_graph.png";
+import firenewsImage from "../images/projects/firenews.png";
 import {
+    AndroidTech,
     AWSTech,
     CSharp,
     Django,
+    FirebaseTech,
     Java,
     Javascript,
+    KotlinTech,
     NodeJs,
     PostgresTech,
     PythonTech,
     ReactTech,
     Unity
-} from "../components/Techs";
+} from "./Techs";
 import classNames from "classnames";
 
 const Projects = () => {
@@ -39,16 +42,16 @@ const Projects = () => {
                 </ul>
             </Project>
             <Project
-                title="XMR Bot"
-                image={xmrBotImage}
-                techs={[Javascript, NodeJs]}
-                githubLink="https://github.com/FillipdotS/xmr-bot"
-                viewLink="https://steamcommunity.com/id/xmrkeybot"
+                title="FireNews"
+                image={firenewsImage}
+                techs={[KotlinTech, AndroidTech, FirebaseTech]}
+                githubLink="https://github.com/FillipdotS/FireNews"
             >
-                This is a bot that would trade the Monero cryptocurrency for game items from the game Counter Strike: Global Offensive, and vice versa.
+                Android news aggregator app. Supports accounts and sending notifications when new articles are available that match a users interests.
                 <ul className={listStyle}>
-                    <li>Ran on a VPS</li>
-                    <li>Gave support to customers who had issues</li>
+                    <li>Dependency injection</li>
+                    <li>Jetpack Compose</li>
+                    <li>Material3</li>
                 </ul>
             </Project>
             <Project
@@ -87,14 +90,16 @@ const Projects = () => {
                 </ul>
             </Project>
             <Project
-                title="Caesar Cipher"
-                image={cipherImage}
-                techs={[Javascript, ReactTech]}
-                githubLink="https://github.com/FillipdotS/react-caesar-cipher"
+                title="XMR Bot"
+                image={xmrBotImage}
+                techs={[Javascript, NodeJs]}
+                githubLink="https://github.com/FillipdotS/xmr-bot"
+                viewLink="https://steamcommunity.com/id/xmrkeybot"
             >
-                A simple text cipher app, allowing users to input text to shift up or down arbitrarily.
+                This is a bot that would trade the Monero cryptocurrency for game items from the game Counter Strike: Global Offensive, and vice versa.
                 <ul className={listStyle}>
-                    <li>Unit tests with React Testing Library</li>
+                    <li>Ran on a VPS</li>
+                    <li>Gave support to customers who had issues</li>
                 </ul>
             </Project>
         </div>
